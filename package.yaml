@@ -21,6 +21,7 @@ description:         Please see the README on GitHub at <https://github.com/Andr
 
 dependencies:
 - base >= 4.7 && < 5
+- containers
 
 library:
   source-dirs: src
@@ -28,7 +29,7 @@ library:
 executables:
   morse-code-exe:
     main:                Main.hs
-    source-dirs:         app
+    source-dirs:         src
     ghc-options:
     - -threaded
     - -rtsopts
@@ -38,7 +39,7 @@ executables:
 
 tests:
   morse-code-test:
-    main:                Spec.hs
+    main:                Tests.hs
     source-dirs:         test
     ghc-options:
     - -threaded
